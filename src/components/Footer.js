@@ -8,7 +8,6 @@ import { MdEmail } from "react-icons/md";
 
 function Footer() {
   let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
