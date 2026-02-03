@@ -90,7 +90,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.fiverr.com/muhammadareeb"
+                  href="https://www.fiverr.com/muhammadareeb79?public_mode=true"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons fiverr-icon"

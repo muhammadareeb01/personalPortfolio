@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { AiOutlineDownload } from "react-icons/ai";
+import pdf from "../../Assets/SOftwareDeveloper_Areeb_Resumeee.pdf";
 
 function Home() {
   return (
@@ -25,9 +27,11 @@ function Home() {
                 <strong className="main-name"> MUHAMMAD AREEB</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: "50px 50px 20px", textAlign: "left" }}>
                 <Type />
               </div>
+
+              
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
