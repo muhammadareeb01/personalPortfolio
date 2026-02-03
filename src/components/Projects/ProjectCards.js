@@ -7,35 +7,38 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="card-img-wrapper">
+        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <div className="card-img-overlay-gradient"></div>
+      </div>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title className="project-title">{props.title}</Card.Title>
+        <Card.Text className="project-description">
           {props.description}
         </Card.Text>
-        
-        {/* Only show GitHub button if ghLink exists */}
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
-        )}
-        {"\n"}
-        {"\n"}
+        <div className="project-buttons">
+          {/* Only show GitHub button if ghLink exists */}
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank" className="project-btn">
+              <BsGithub /> &nbsp;
+              {props.isBlog ? "Blog" : "GitHub"}
+            </Button>
+          )}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+          {/* Demo link button */}
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              className="project-btn demo-btn"
+              style={{ marginLeft: props.ghLink ? "10px" : "0px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"Live Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );

@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { SiFiverr } from "react-icons/si";
 
 function Home2() {
   return (
@@ -20,6 +21,11 @@ function Home2() {
             <p className="home-about-body">
               I'm a passionate Software Developer with 1 year of experience building
               responsive and high-performing web applications.
+              <br />
+              <br />
+              <span className="fiverr-badge">
+                🏆 <b>Level 2 Seller</b> on Fiverr
+              </span>
               <br />
               <br />I am proficient in
               <i>
@@ -66,6 +72,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  title="GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -76,8 +83,20 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  title="LinkedIn"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.fiverr.com/muhammadareeb"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons fiverr-icon"
+                  title="Fiverr - Level 2 Seller"
+                >
+                  <SiFiverr />
                 </a>
               </li>
               <li className="social-icons">
@@ -86,6 +105,7 @@ function Home2() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  title="Email"
                 >
                   <MdEmail />
                 </a>

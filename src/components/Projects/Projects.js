@@ -46,6 +46,7 @@ function Projects() {
               isBlog={false}
               title="Home Exchange Platform"
               description="Full-stack Home Exchange app using Next.js and TypeScript with secure JWT + Supabase Auth. Features real-time chat via Firebase, instant notifications, responsive design for all devices, and optimized property listing queries for faster load times."
+              ghLink="https://github.com/muhammadareeb01/houseexxchangepri"
             />
           </Col>
 
