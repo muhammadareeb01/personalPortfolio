@@ -1,11 +1,9 @@
-import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+
+import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { AiOutlineDownload } from "react-icons/ai";
-import pdf from "../../Assets/SOftwareDeveloper_Areeb_Resumeee.pdf";
 
 function Home() {
   return (

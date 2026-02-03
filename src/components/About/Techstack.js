@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
 import {
   DiJavascript1,
